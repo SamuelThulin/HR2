@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/p5.js"></script>
+    <!-- <script src="js/p5.sound.min.js"></script> -->
+    <script src="js/Tone.js"></script>
+    <!--  <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <meta charset="utf-8">
+
+
+</head>
+
+<body>
+    <!--<div id='playButton'>PLAY</div>-->
+    <div class="uk-section uk-section-secondary uk-section-xsmall">
+        <div class="uk-container uk-container-small">
+
+            <h1 class="uk-heading-small uk-text-center  uk-margin-remove"> Hemo-resonance #2</h1>
+            <p class="uk-text-center">Select a date and time from the drop-down menu to hear the blood-sugar reading
+                creatively sonified
+
+                (all values in mmol/L)</p>
+            <div class="uk-flex uk-flex-center">
+                <div>
+                    <form>
+                        <!-- <div class="uk-margin"> -->
+                            <div uk-form-custom="target: > * > span:first-child">
+                                <select id="chooseValNEW">
+                                    <option value="">Please select...</option>
+                                </select>
+                                <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        <!-- </div> -->
+                    </form>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-margin-top">
+                    <div>
+                        <p class="uk-text-center uk-text-meta uk-text-uppercase uk-margin-remove-bottom">Volume</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-range" type="range" min="-60" max="0" value="0" id="volSliderNEW">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section" style="background-color:black">
+        <div class="uk-container">
+
+        
+        <div class="uk-flex uk-flex-center">
+            <div>
+                <div id="canvasDiv"> </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="uk-section uk-section-secondary uk-section-small">
+        <div class="uk-container uk-container-xsmall">
+            <div class="uk-flex uk-flex-center">
+            <a href="https://samuelthulin.com/projects/hemo-resonance2/" target="_blank">about</a>
+        </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+
+</html>
