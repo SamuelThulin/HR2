@@ -31,7 +31,7 @@ let bgInfo;
 // preload table data
 function preload() {
   dataBG = loadTable(
-    'BG_parse_text_3.csv',
+    'BG_16Jul2021week.csv',
     'csv',
     'header');
   hussar = loadFont("Hussar.otf");
