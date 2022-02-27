@@ -31,7 +31,7 @@ let bgInfo;
 // preload table data
 function preload() {
   dataBG = loadTable(
-    'BG_ContourCSVReport_2022_27_02_BG27FebweekHR',
+    'BG_ContourCSVReport_2022_27_02_BG27FebweekHR.csv',
     'csv',
     'header');
   hussar = loadFont("Hussar.otf");
